@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TrendsViewController: UIViewController {
+class TrendsViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

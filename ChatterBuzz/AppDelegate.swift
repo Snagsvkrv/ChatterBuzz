@@ -15,8 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        QBApplication.sharedApplication().applicationId = 21395
+        QBConnection.registerServiceKey("78KEfjHbw4QQauM")
+        QBConnection.registerServiceSecret("8BX2Q-9UxHUWtOD")
         // Override point for customization after application launch.
         return true
+    }
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+        
     }
 
     func applicationWillResignActive(application: UIApplication) {

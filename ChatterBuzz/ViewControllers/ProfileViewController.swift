@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: BaseViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-
+        super.viewDidLoad(false)
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +21,9 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func login() {
+        self.performSegueWithIdentifier("login", sender: self)
+    }
 
     /*
     // MARK: - Navigation

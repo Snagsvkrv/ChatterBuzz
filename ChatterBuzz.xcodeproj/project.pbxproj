@@ -8,12 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		B77D185B1AC5E0E10095E821 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77D185A1AC5E0E10095E821 /* AppDelegate.swift */; };
-		B77D185D1AC5E0E10095E821 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77D185C1AC5E0E10095E821 /* MasterViewController.swift */; };
-		B77D185F1AC5E0E10095E821 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77D185E1AC5E0E10095E821 /* DetailViewController.swift */; };
 		B77D18621AC5E0E10095E821 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B77D18601AC5E0E10095E821 /* Main.storyboard */; };
 		B77D18641AC5E0E10095E821 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B77D18631AC5E0E10095E821 /* Images.xcassets */; };
 		B77D18671AC5E0E10095E821 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77D18651AC5E0E10095E821 /* LaunchScreen.xib */; };
 		B77D18731AC5E0E10095E821 /* ChatterBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77D18721AC5E0E10095E821 /* ChatterBuzzTests.swift */; };
+		B78B8C711AC6837E009F64EA /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B78B8C701AC6837E009F64EA /* libxml2.2.dylib */; };
+		B78B8C741AC6855A009F64EA /* BhiBhi.m in Sources */ = {isa = PBXBuildFile; fileRef = B78B8C731AC6855A009F64EA /* BhiBhi.m */; };
+		B78B8C7D1AC68B99009F64EA /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B78B8C7C1AC68B99009F64EA /* back@2x.png */; };
+		B78B8C821AC68BDE009F64EA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78B8C7F1AC68BDE009F64EA /* BaseViewController.swift */; };
+		B78B8C831AC68BDE009F64EA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78B8C801AC68BDE009F64EA /* ProfileViewController.swift */; };
+		B78B8C841AC68BDE009F64EA /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78B8C811AC68BDE009F64EA /* SignupViewController.swift */; };
+		B78B8C891AC68E99009F64EA /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78B8C861AC68E99009F64EA /* RequestType.swift */; };
+		B78B8C8A1AC68E99009F64EA /* YoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78B8C881AC68E99009F64EA /* YoTextField.swift */; };
+		B78B8C8C1AC69260009F64EA /* TrendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78B8C8B1AC69260009F64EA /* TrendsViewController.swift */; };
+		B78B8C8E1AC6926F009F64EA /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78B8C8D1AC6926F009F64EA /* ContactsViewController.swift */; };
+		B78B8C901AC6927E009F64EA /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78B8C8F1AC6927E009F64EA /* ChatsViewController.swift */; };
+		B78B8C921AC69288009F64EA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78B8C911AC69288009F64EA /* SettingsViewController.swift */; };
+		B78B8C941AC69316009F64EA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78B8C931AC69316009F64EA /* TabBarController.swift */; };
+		B78B8C981AC69627009F64EA /* path.png in Resources */ = {isa = PBXBuildFile; fileRef = B78B8C951AC69627009F64EA /* path.png */; };
+		B78B8C991AC69627009F64EA /* path@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B78B8C961AC69627009F64EA /* path@2x.png */; };
+		B78B8C9A1AC69627009F64EA /* path@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B78B8C971AC69627009F64EA /* path@3x.png */; };
+		B78B8C9E1AC696CF009F64EA /* chat_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B78B8C9B1AC696CF009F64EA /* chat_icon.png */; };
+		B78B8C9F1AC696CF009F64EA /* chat_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B78B8C9C1AC696CF009F64EA /* chat_icon@2x.png */; };
+		B78B8CA01AC696CF009F64EA /* chat_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B78B8C9D1AC696CF009F64EA /* chat_icon@3x.png */; };
+		B7A6D2D91AC679F700220196 /* Quickblox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A6D2D81AC679F700220196 /* Quickblox.framework */; };
+		B7A6D2DC1AC67B3000220196 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A6D2DB1AC67B3000220196 /* CFNetwork.framework */; };
+		B7A6D2DE1AC67B3700220196 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A6D2DD1AC67B3700220196 /* SystemConfiguration.framework */; };
+		B7A6D2E01AC67B3D00220196 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A6D2DF1AC67B3D00220196 /* MobileCoreServices.framework */; };
+		B7A6D2E21AC67B4300220196 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A6D2E11AC67B4300220196 /* CoreGraphics.framework */; };
+		B7A6D2E41AC67B4800220196 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A6D2E31AC67B4800220196 /* CoreLocation.framework */; };
+		B7A6D2E61AC67B4E00220196 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A6D2E51AC67B4E00220196 /* CoreData.framework */; };
+		B7A6D2E81AC67B5700220196 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A6D2E71AC67B5700220196 /* AudioToolbox.framework */; };
+		B7A6D2EA1AC67B6500220196 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A6D2E91AC67B6500220196 /* CoreMedia.framework */; };
+		B7A6D2EC1AC67B6C00220196 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A6D2EB1AC67B6C00220196 /* Accelerate.framework */; };
+		B7A6D2EE1AC67B7400220196 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A6D2ED1AC67B7400220196 /* AVFoundation.framework */; };
+		B7A6D2F01AC67B7A00220196 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A6D2EF1AC67B7A00220196 /* Security.framework */; };
+		B7A6D2F21AC67B8100220196 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A6D2F11AC67B8100220196 /* libz.dylib */; };
+		B7A6D2F41AC67B8800220196 /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A6D2F31AC67B8800220196 /* libresolv.dylib */; };
+		B7A6D2F81AC67B9000220196 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A6D2F61AC67B9000220196 /* libxml2.dylib */; };
+		B7A6D2FA1AC67BAD00220196 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A6D2F91AC67BAD00220196 /* libz.1.2.5.dylib */; };
+		B7A6D2FC1AC67BCF00220196 /* libresolv.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A6D2FB1AC67BCF00220196 /* libresolv.9.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +64,49 @@
 		B77D18551AC5E0E10095E821 /* ChatterBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatterBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77D18591AC5E0E10095E821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B77D185A1AC5E0E10095E821 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B77D185C1AC5E0E10095E821 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		B77D185E1AC5E0E10095E821 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B77D18611AC5E0E10095E821 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B77D18631AC5E0E10095E821 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B77D18661AC5E0E10095E821 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B77D186C1AC5E0E10095E821 /* ChatterBuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatterBuzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77D18711AC5E0E10095E821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B77D18721AC5E0E10095E821 /* ChatterBuzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatterBuzzTests.swift; sourceTree = "<group>"; };
+		B78B8C701AC6837E009F64EA /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		B78B8C721AC6855A009F64EA /* ChatterBuzz-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChatterBuzz-Bridging-Header.h"; sourceTree = "<group>"; };
+		B78B8C731AC6855A009F64EA /* BhiBhi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BhiBhi.m; sourceTree = "<group>"; };
+		B78B8C7C1AC68B99009F64EA /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		B78B8C7F1AC68BDE009F64EA /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B78B8C801AC68BDE009F64EA /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B78B8C811AC68BDE009F64EA /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		B78B8C861AC68E99009F64EA /* RequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		B78B8C881AC68E99009F64EA /* YoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoTextField.swift; sourceTree = "<group>"; };
+		B78B8C8B1AC69260009F64EA /* TrendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendsViewController.swift; sourceTree = "<group>"; };
+		B78B8C8D1AC6926F009F64EA /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		B78B8C8F1AC6927E009F64EA /* ChatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		B78B8C911AC69288009F64EA /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B78B8C931AC69316009F64EA /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		B78B8C951AC69627009F64EA /* path.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = path.png; sourceTree = "<group>"; };
+		B78B8C961AC69627009F64EA /* path@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "path@2x.png"; sourceTree = "<group>"; };
+		B78B8C971AC69627009F64EA /* path@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "path@3x.png"; sourceTree = "<group>"; };
+		B78B8C9B1AC696CF009F64EA /* chat_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat_icon.png; sourceTree = "<group>"; };
+		B78B8C9C1AC696CF009F64EA /* chat_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_icon@2x.png"; sourceTree = "<group>"; };
+		B78B8C9D1AC696CF009F64EA /* chat_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_icon@3x.png"; sourceTree = "<group>"; };
+		B7A6D2D81AC679F700220196 /* Quickblox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quickblox.framework; sourceTree = "<group>"; };
+		B7A6D2DB1AC67B3000220196 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B7A6D2DD1AC67B3700220196 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B7A6D2DF1AC67B3D00220196 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B7A6D2E11AC67B4300220196 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B7A6D2E31AC67B4800220196 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B7A6D2E51AC67B4E00220196 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B7A6D2E71AC67B5700220196 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B7A6D2E91AC67B6500220196 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		B7A6D2EB1AC67B6C00220196 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		B7A6D2ED1AC67B7400220196 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B7A6D2EF1AC67B7A00220196 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B7A6D2F11AC67B8100220196 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B7A6D2F31AC67B8800220196 /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
+		B7A6D2F61AC67B9000220196 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		B7A6D2F91AC67BAD00220196 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		B7A6D2FB1AC67BCF00220196 /* libresolv.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.9.dylib; path = usr/lib/libresolv.9.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +114,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B78B8C711AC6837E009F64EA /* libxml2.2.dylib in Frameworks */,
+				B7A6D2FC1AC67BCF00220196 /* libresolv.9.dylib in Frameworks */,
+				B7A6D2FA1AC67BAD00220196 /* libz.1.2.5.dylib in Frameworks */,
+				B7A6D2F81AC67B9000220196 /* libxml2.dylib in Frameworks */,
+				B7A6D2F41AC67B8800220196 /* libresolv.dylib in Frameworks */,
+				B7A6D2F21AC67B8100220196 /* libz.dylib in Frameworks */,
+				B7A6D2F01AC67B7A00220196 /* Security.framework in Frameworks */,
+				B7A6D2EE1AC67B7400220196 /* AVFoundation.framework in Frameworks */,
+				B7A6D2EC1AC67B6C00220196 /* Accelerate.framework in Frameworks */,
+				B7A6D2EA1AC67B6500220196 /* CoreMedia.framework in Frameworks */,
+				B7A6D2E81AC67B5700220196 /* AudioToolbox.framework in Frameworks */,
+				B7A6D2E61AC67B4E00220196 /* CoreData.framework in Frameworks */,
+				B7A6D2E41AC67B4800220196 /* CoreLocation.framework in Frameworks */,
+				B7A6D2E21AC67B4300220196 /* CoreGraphics.framework in Frameworks */,
+				B7A6D2E01AC67B3D00220196 /* MobileCoreServices.framework in Frameworks */,
+				B7A6D2DE1AC67B3700220196 /* SystemConfiguration.framework in Frameworks */,
+				B7A6D2DC1AC67B3000220196 /* CFNetwork.framework in Frameworks */,
+				B7A6D2D91AC679F700220196 /* Quickblox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,13 +166,18 @@
 		B77D18571AC5E0E10095E821 /* ChatterBuzz */ = {
 			isa = PBXGroup;
 			children = (
+				B78B8C851AC68E99009F64EA /* Models */,
+				B78B8C871AC68E99009F64EA /* Views */,
+				B78B8C7E1AC68BDE009F64EA /* ViewControllers */,
+				B78B8C7B1AC68B84009F64EA /* Resources */,
+				B7A6D2D71AC679A700220196 /* Frameworks */,
 				B77D185A1AC5E0E10095E821 /* AppDelegate.swift */,
-				B77D185C1AC5E0E10095E821 /* MasterViewController.swift */,
-				B77D185E1AC5E0E10095E821 /* DetailViewController.swift */,
 				B77D18601AC5E0E10095E821 /* Main.storyboard */,
 				B77D18631AC5E0E10095E821 /* Images.xcassets */,
 				B77D18651AC5E0E10095E821 /* LaunchScreen.xib */,
 				B77D18581AC5E0E10095E821 /* Supporting Files */,
+				B78B8C731AC6855A009F64EA /* BhiBhi.m */,
+				B78B8C721AC6855A009F64EA /* ChatterBuzz-Bridging-Header.h */,
 			);
 			path = ChatterBuzz;
 			sourceTree = "<group>";
@@ -113,6 +205,76 @@
 				B77D18711AC5E0E10095E821 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B78B8C7B1AC68B84009F64EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B78B8C9B1AC696CF009F64EA /* chat_icon.png */,
+				B78B8C9C1AC696CF009F64EA /* chat_icon@2x.png */,
+				B78B8C9D1AC696CF009F64EA /* chat_icon@3x.png */,
+				B78B8C951AC69627009F64EA /* path.png */,
+				B78B8C961AC69627009F64EA /* path@2x.png */,
+				B78B8C971AC69627009F64EA /* path@3x.png */,
+				B78B8C7C1AC68B99009F64EA /* back@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B78B8C7E1AC68BDE009F64EA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B78B8C7F1AC68BDE009F64EA /* BaseViewController.swift */,
+				B78B8C801AC68BDE009F64EA /* ProfileViewController.swift */,
+				B78B8C811AC68BDE009F64EA /* SignupViewController.swift */,
+				B78B8C8B1AC69260009F64EA /* TrendsViewController.swift */,
+				B78B8C8D1AC6926F009F64EA /* ContactsViewController.swift */,
+				B78B8C8F1AC6927E009F64EA /* ChatsViewController.swift */,
+				B78B8C911AC69288009F64EA /* SettingsViewController.swift */,
+				B78B8C931AC69316009F64EA /* TabBarController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B78B8C851AC68E99009F64EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B78B8C861AC68E99009F64EA /* RequestType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B78B8C871AC68E99009F64EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B78B8C881AC68E99009F64EA /* YoTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B7A6D2D71AC679A700220196 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B78B8C701AC6837E009F64EA /* libxml2.2.dylib */,
+				B7A6D2FB1AC67BCF00220196 /* libresolv.9.dylib */,
+				B7A6D2F91AC67BAD00220196 /* libz.1.2.5.dylib */,
+				B7A6D2F61AC67B9000220196 /* libxml2.dylib */,
+				B7A6D2F31AC67B8800220196 /* libresolv.dylib */,
+				B7A6D2F11AC67B8100220196 /* libz.dylib */,
+				B7A6D2EF1AC67B7A00220196 /* Security.framework */,
+				B7A6D2ED1AC67B7400220196 /* AVFoundation.framework */,
+				B7A6D2EB1AC67B6C00220196 /* Accelerate.framework */,
+				B7A6D2E91AC67B6500220196 /* CoreMedia.framework */,
+				B7A6D2E71AC67B5700220196 /* AudioToolbox.framework */,
+				B7A6D2E51AC67B4E00220196 /* CoreData.framework */,
+				B7A6D2E31AC67B4800220196 /* CoreLocation.framework */,
+				B7A6D2E11AC67B4300220196 /* CoreGraphics.framework */,
+				B7A6D2DF1AC67B3D00220196 /* MobileCoreServices.framework */,
+				B7A6D2DD1AC67B3700220196 /* SystemConfiguration.framework */,
+				B7A6D2DB1AC67B3000220196 /* CFNetwork.framework */,
+				B7A6D2D81AC679F700220196 /* Quickblox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,9 +357,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B78B8C9E1AC696CF009F64EA /* chat_icon.png in Resources */,
 				B77D18621AC5E0E10095E821 /* Main.storyboard in Resources */,
+				B78B8C981AC69627009F64EA /* path.png in Resources */,
+				B78B8C9F1AC696CF009F64EA /* chat_icon@2x.png in Resources */,
+				B78B8CA01AC696CF009F64EA /* chat_icon@3x.png in Resources */,
+				B78B8C7D1AC68B99009F64EA /* back@2x.png in Resources */,
 				B77D18671AC5E0E10095E821 /* LaunchScreen.xib in Resources */,
 				B77D18641AC5E0E10095E821 /* Images.xcassets in Resources */,
+				B78B8C991AC69627009F64EA /* path@2x.png in Resources */,
+				B78B8C9A1AC69627009F64EA /* path@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,9 +384,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B77D185F1AC5E0E10095E821 /* DetailViewController.swift in Sources */,
-				B77D185D1AC5E0E10095E821 /* MasterViewController.swift in Sources */,
+				B78B8C741AC6855A009F64EA /* BhiBhi.m in Sources */,
 				B77D185B1AC5E0E10095E821 /* AppDelegate.swift in Sources */,
+				B78B8C921AC69288009F64EA /* SettingsViewController.swift in Sources */,
+				B78B8C901AC6927E009F64EA /* ChatsViewController.swift in Sources */,
+				B78B8C8A1AC68E99009F64EA /* YoTextField.swift in Sources */,
+				B78B8C841AC68BDE009F64EA /* SignupViewController.swift in Sources */,
+				B78B8C8C1AC69260009F64EA /* TrendsViewController.swift in Sources */,
+				B78B8C8E1AC6926F009F64EA /* ContactsViewController.swift in Sources */,
+				B78B8C831AC68BDE009F64EA /* ProfileViewController.swift in Sources */,
+				B78B8C941AC69316009F64EA /* TabBarController.swift in Sources */,
+				B78B8C821AC68BDE009F64EA /* BaseViewController.swift in Sources */,
+				B78B8C891AC68E99009F64EA /* RequestType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,9 +518,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ChatterBuzz",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = ChatterBuzz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-ObjC",
+					"-lstdc++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChatterBuzz/ChatterBuzz-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,9 +545,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ChatterBuzz",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = ChatterBuzz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-ObjC",
+					"-lstdc++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChatterBuzz/ChatterBuzz-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +620,7 @@
 				B77D18781AC5E0E10095E821 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B77D18791AC5E0E10095E821 /* Build configuration list for PBXNativeTarget "ChatterBuzzTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +629,7 @@
 				B77D187B1AC5E0E10095E821 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

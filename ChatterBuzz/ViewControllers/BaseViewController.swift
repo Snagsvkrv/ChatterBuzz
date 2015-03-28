@@ -47,14 +47,13 @@ class BaseViewController: UIViewController {
             self.navigationItem.leftBarButtonItem?.tintColor = UIColor.blackColor()
             self.navigationItem.hidesBackButton = true
         }
-        locationManager = appDelegate.locationManager
         activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.Gray)
         activityIndicator.center = self.view.center
         self.view.insertSubview(activityIndicator, atIndex: 5)
         
 //        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "GeezaPro", size: 15)!]
         stopActivty()
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: (244/255.0), green: (67/255.0), blue: (54/255.0), alpha: 1.0)
+//        self.navigationController?.navigationBar.barTintColor = UIColor(red: (244/255.0), green: (67/255.0), blue: (54/255.0), alpha: 1.0)
         
         self.navigationController?.setToolbarHidden(false, animated: true)
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
@@ -62,38 +61,31 @@ class BaseViewController: UIViewController {
     }
     
     func sendRequest(requestType: RequestType, httpMethod: HTTPMethod, queryString: NSString, data: NSData, completionHandler handler: (NSDictionary!, NSError!) -> Void) {
-        startActivity()
+        self.startActivity()
         var queryParams = "\(queryString)"
         
         //TODO: remove when using a device
 //        if CLLocationManager.locationServicesEnabled() && CLLocationManager.authorizationStatus() != CLAuthorizationStatus.Denied {
 //            queryParams += "&lat=\(locationManager.location.coordinate.latitude)&lng=\(locationManager.location.coordinate.latitude)"
 //        }
-        if readFromFile == true {
-            let path = NSBundle.mainBundle().pathForResource(requestType.jsonFileName(), ofType: "json")
-            let jsonData = NSData(contentsOfFile: path!, options: NSDataReadingOptions.DataReadingMappedIfSafe, error: nil)
-            let responseJSON = NSJSONSerialization.JSONObjectWithData(jsonData!, options: NSJSONReadingOptions.MutableContainers, error: nil) as? NSDictionary
-            handler(responseJSON, nil)
-        } else {
-            var url = "\(requestType.rawValue)\(queryParams)"
-            var request = NSMutableURLRequest(URL: NSURL(string: url)!, cachePolicy: NSURLRequestCachePolicy.UseProtocolCachePolicy, timeoutInterval: 60)
-            request.HTTPMethod = httpMethod.rawValue
-            
-            if httpMethod == HTTPMethod.POST {
-                request.HTTPBody = data
-            }
-
-            NSURLConnection.sendAsynchronousRequest(request, queue: queue, completionHandler:{ (response: NSURLResponse!, data: NSData!, error: NSError!) -> Void in
-                /* Your code */
-                var err: NSError?
-                NSLog("%@", request.URL!)
-                NSLog("%@", NSString(data: data, encoding: NSUTF8StringEncoding)!)
-                let responseJSON = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as? NSDictionary
-                dispatch_async( dispatch_get_main_queue(), {
-                    handler(responseJSON, err)
-                })
-            })
+        var url = "\(requestType.rawValue)\(queryParams)"
+        var request = NSMutableURLRequest(URL: NSURL(string: url)!, cachePolicy: NSURLRequestCachePolicy.UseProtocolCachePolicy, timeoutInterval: 60)
+        request.HTTPMethod = httpMethod.rawValue
+        
+        if httpMethod == HTTPMethod.POST {
+            request.HTTPBody = data
         }
+
+        NSURLConnection.sendAsynchronousRequest(request, queue: queue, completionHandler:{ (response: NSURLResponse!, data: NSData!, error: NSError!) -> Void in
+            /* Your code */
+            var err: NSError?
+            NSLog("%@", request.URL!)
+            NSLog("%@", NSString(data: data, encoding: NSUTF8StringEncoding)!)
+            let responseJSON = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as? NSDictionary
+            dispatch_async( dispatch_get_main_queue(), {
+                handler(responseJSON, err)
+            })
+        })
     }
     
     func cancelAllOperations() {
@@ -135,7 +127,6 @@ class BaseViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        SwUtility.saveData()
         // Dispose of any resources that can be recreated.
     }
     

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignupViewController: UIViewController {
+class SignupViewController: BaseViewController {
     @IBOutlet weak var phoneNumber: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var signupButton: UIButton!
@@ -25,9 +25,13 @@ class SignupViewController: UIViewController {
     }
 
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad(false)
         // Do any additional setup after loading the view, typically from a nib.
         self.configureView()
+    }
+    
+    @IBAction func signup() {
+        self.performSegueWithIdentifier("profile", sender: self)
     }
 
     override func didReceiveMemoryWarning() {
