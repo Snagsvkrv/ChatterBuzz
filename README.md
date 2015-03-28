@@ -1,2 +1,0 @@
-# ChatterBuzz
-Hikeathon
