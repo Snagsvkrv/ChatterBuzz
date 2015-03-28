@@ -31,6 +31,9 @@
 		B78B8C9E1AC696CF009F64EA /* chat_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B78B8C9B1AC696CF009F64EA /* chat_icon.png */; };
 		B78B8C9F1AC696CF009F64EA /* chat_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B78B8C9C1AC696CF009F64EA /* chat_icon@2x.png */; };
 		B78B8CA01AC696CF009F64EA /* chat_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B78B8C9D1AC696CF009F64EA /* chat_icon@3x.png */; };
+		B78B8CA41AC69A63009F64EA /* General.png in Resources */ = {isa = PBXBuildFile; fileRef = B78B8CA11AC69A63009F64EA /* General.png */; };
+		B78B8CA51AC69A63009F64EA /* General@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B78B8CA21AC69A63009F64EA /* General@2x.png */; };
+		B78B8CA61AC69A63009F64EA /* General@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B78B8CA31AC69A63009F64EA /* General@3x.png */; };
 		B7A6D2D91AC679F700220196 /* Quickblox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A6D2D81AC679F700220196 /* Quickblox.framework */; };
 		B7A6D2DC1AC67B3000220196 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A6D2DB1AC67B3000220196 /* CFNetwork.framework */; };
 		B7A6D2DE1AC67B3700220196 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A6D2DD1AC67B3700220196 /* SystemConfiguration.framework */; };
@@ -90,6 +93,9 @@
 		B78B8C9B1AC696CF009F64EA /* chat_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat_icon.png; sourceTree = "<group>"; };
 		B78B8C9C1AC696CF009F64EA /* chat_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_icon@2x.png"; sourceTree = "<group>"; };
 		B78B8C9D1AC696CF009F64EA /* chat_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_icon@3x.png"; sourceTree = "<group>"; };
+		B78B8CA11AC69A63009F64EA /* General.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = General.png; sourceTree = "<group>"; };
+		B78B8CA21AC69A63009F64EA /* General@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "General@2x.png"; sourceTree = "<group>"; };
+		B78B8CA31AC69A63009F64EA /* General@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "General@3x.png"; sourceTree = "<group>"; };
 		B7A6D2D81AC679F700220196 /* Quickblox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quickblox.framework; sourceTree = "<group>"; };
 		B7A6D2DB1AC67B3000220196 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		B7A6D2DD1AC67B3700220196 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -210,6 +216,9 @@
 		B78B8C7B1AC68B84009F64EA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B78B8CA11AC69A63009F64EA /* General.png */,
+				B78B8CA21AC69A63009F64EA /* General@2x.png */,
+				B78B8CA31AC69A63009F64EA /* General@3x.png */,
 				B78B8C9B1AC696CF009F64EA /* chat_icon.png */,
 				B78B8C9C1AC696CF009F64EA /* chat_icon@2x.png */,
 				B78B8C9D1AC696CF009F64EA /* chat_icon@3x.png */,
@@ -357,6 +366,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B78B8CA41AC69A63009F64EA /* General.png in Resources */,
+				B78B8CA51AC69A63009F64EA /* General@2x.png in Resources */,
 				B78B8C9E1AC696CF009F64EA /* chat_icon.png in Resources */,
 				B77D18621AC5E0E10095E821 /* Main.storyboard in Resources */,
 				B78B8C981AC69627009F64EA /* path.png in Resources */,
@@ -367,6 +378,7 @@
 				B77D18641AC5E0E10095E821 /* Images.xcassets in Resources */,
 				B78B8C991AC69627009F64EA /* path@2x.png in Resources */,
 				B78B8C9A1AC69627009F64EA /* path@3x.png in Resources */,
+				B78B8CA61AC69A63009F64EA /* General@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
