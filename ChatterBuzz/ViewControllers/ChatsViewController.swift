@@ -8,11 +8,12 @@
 
 import UIKit
 
-class ChatsViewController: UIViewController {
+class ChatsViewController: BaseViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-
+        super.viewDidLoad(false)
+        self.hideToolbar = false
+        self.navigationItem.hidesBackButton = true
         // Do any additional setup after loading the view.
     }
 
