@@ -10,6 +10,7 @@
 #import "ChatMessageTableViewCell.h"
 #import "CBCategory.h"
 #import "CBUser.h"
+#import "ShowTrendViewController.h"
 
 @interface ChatViewController () <UITableViewDelegate, UITableViewDataSource, QBActionStatusDelegate>
 
@@ -213,6 +214,27 @@
     return cell;
 }
 
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    QBChatAbstractMessage *message = self.messages[indexPath.row];
+    NSLog(@"bhi bhi %@", message.text);
+    NSString *substring =[message.text substringToIndex:3];
+    if (message.text.length > 6 && [substring isEqualToString:@"Top"]) {
+        [self performSegueWithIdentifier:@"show_trend" sender:self];
+    }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    if ([segue.identifier  isEqual: @"show_trend"]) {
+        ShowTrendViewController *vc = (ShowTrendViewController *)[segue destinationViewController];
+        if (self.trend) {
+            vc.trend = self.trend;
+        } else {
+        }
+    }
+}
+
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     QBChatAbstractMessage *chatMessage = [self.messages objectAtIndex:indexPath.row];
     CGFloat cellHeight = [ChatMessageTableViewCell heightForCellWithMessage:chatMessage];
@@ -243,7 +265,7 @@
                  if (self.selectedTrend > self.category.trends.count - 1) {
                      self.selectedTrend = 0;
                  }
-                 self.messageTextField.text = [NSString stringWithFormat:@"topic: %@\nurl: %@\ndescription: %@", self.trend.name, self.trend.url, self.trend.summary];
+                 self.messageTextField.text = [NSString stringWithFormat:@"Topic: %@           \nDescription: %@", self.trend.name, self.trend.summary];
                  [self sendMessage:self.sendMessageButton];
 
              });
@@ -255,7 +277,7 @@
             self.selectedTrend = 0;
         }
         self.trend = self.category.trends[self.selectedTrend];
-        self.messageTextField.text = [NSString stringWithFormat:@"topic: %@\nurl: %@\ndescription: %@", self.trend.name, self.trend.url, self.trend.summary];
+        self.messageTextField.text = [NSString stringWithFormat:@"Topic: %@\nurl: %@\nDescription: %@", self.trend.name, self.trend.url, self.trend.summary];
         [self sendMessage:self.sendMessageButton];
         self.selectedTrend += 1;
     }
