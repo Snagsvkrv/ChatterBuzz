@@ -12,7 +12,7 @@
 #import "CBCategory.h"
 #import "Trend.h"
 #import "SplashViewController.h"
-#import "UsersViewController.h"
+#import "ShowTrendViewController.h"
 
 @interface TrendsViewController ()
 @property (nonatomic, strong) GetTrendsResponse *results;
@@ -100,7 +100,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+//    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     [self performSegueWithIdentifier:@"show_trend" sender:self];
 }
 
@@ -112,7 +112,7 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     if ([segue.identifier  isEqual: @"show_trend"]) {
-        UsersViewController *vc = (UsersViewController *)[segue destinationViewController];
+        ShowTrendViewController *vc = (ShowTrendViewController *)[segue destinationViewController];
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         CBCategory *category = self.results.categories[indexPath.section];
         vc.trend = category.trends[indexPath.row];
