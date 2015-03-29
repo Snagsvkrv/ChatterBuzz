@@ -10,6 +10,7 @@
 #import "UsersPaginator.h"
 #import "СhatViewController.h"
 #import "DialogsViewController.h"
+#import "CBUser.h"
 
 @interface UsersViewController () <UITableViewDelegate, UITableViewDataSource, NMPaginatorDelegate, QBActionStatusDelegate>
 
@@ -19,6 +20,7 @@
 @property (nonatomic, strong) UsersPaginator *paginator;
 @property (nonatomic, strong) UILabel *footerLabel;
 @property (nonatomic, strong) UIActivityIndicatorView *activityIndicator;
+@property (nonatomic, strong) QBChatDialog *chatDialog;
 
 @end
 
@@ -79,11 +81,9 @@
     
     __weak __typeof(self)weakSelf = self;
     [QBRequest createDialog:chatDialog successBlock:^(QBResponse *response, QBChatDialog *createdDialog) {
-        
-            DialogsViewController *dialogsViewController = weakSelf.navigationController.viewControllers[0];
-            dialogsViewController.createdDialog = createdDialog;
-            
-            [weakSelf.navigationController popViewControllerAnimated:YES];
+        self.chatDialog = createdDialog;
+        [self performSegueWithIdentifier:@"ShowNewChatViewControllerSegue" sender:self];
+//            [weakSelf.navigationController popViewControllerAnimated:YES];
 
     } errorBlock:^(QBResponse *response) {
         
@@ -97,6 +97,16 @@
     }];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.destinationViewController isKindOfClass:ChatViewController.class]){
+        ChatViewController *destinationViewController = (ChatViewController *)segue.destinationViewController;
+        
+        if(self.chatDialog != nil){
+            destinationViewController.dialog = self.chatDialog;
+            self.chatDialog = nil;
+        }
+    }
+}
 
 #pragma mark
 #pragma mark Paginator

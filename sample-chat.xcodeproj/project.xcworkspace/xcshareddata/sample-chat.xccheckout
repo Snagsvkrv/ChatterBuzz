@@ -10,31 +10,31 @@
 	<string>sample-chat</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>E9E563779BB34299E24B2D7FE6783C38D446DDC8</key>
+		<key>7F303CB61881324F62E393B6A7AE153B41104C1E</key>
 		<string>https://github.com/Snagsvkrv/ChatterBuzz.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>sample-chat/sample-chat.xcodeproj</string>
+	<string>sample-chat.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>E9E563779BB34299E24B2D7FE6783C38D446DDC8</key>
-		<string>../../..</string>
+		<key>7F303CB61881324F62E393B6A7AE153B41104C1E</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/Snagsvkrv/ChatterBuzz.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>E9E563779BB34299E24B2D7FE6783C38D446DDC8</string>
+	<string>7F303CB61881324F62E393B6A7AE153B41104C1E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E9E563779BB34299E24B2D7FE6783C38D446DDC8</string>
+			<string>7F303CB61881324F62E393B6A7AE153B41104C1E</string>
 			<key>IDESourceControlWCCName</key>
-			<string>ChatterBuzz</string>
+			<string>sample-chat</string>
 		</dict>
 	</array>
 </dict>

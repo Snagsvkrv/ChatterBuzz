@@ -14,8 +14,10 @@
     self = [super init];
     if (self) {
         self.name = [dict valueForKey:@"name"];
+        self.trend_id = [[dict valueForKey:@"id"] stringValue];
         self.summary = [dict valueForKey:@"description"];
         self.url = [dict valueForKey:@"url"];
+        self.category_id = [dict valueForKey:@"interest_id"];
     }
     return self;
 }

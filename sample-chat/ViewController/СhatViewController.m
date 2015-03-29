@@ -8,6 +8,8 @@
 
 #import "СhatViewController.h"
 #import "ChatMessageTableViewCell.h"
+#import "CBCategory.h"
+#import "CBUser.h"
 
 @interface ChatViewController () <UITableViewDelegate, UITableViewDataSource, QBActionStatusDelegate>
 
@@ -18,8 +20,10 @@
 @property (nonatomic, weak) IBOutlet UIButton *changeTopicButton;
 @property (nonatomic, weak) IBOutlet UITableView *messagesTableView;
 @property (nonatomic, strong) QBChatRoom *chatRoom;
-
-- (IBAction)sendMessage:(id)sender;
+@property (nonatomic, strong) CBCategory *category;
+@property (nonatomic) int selectedTrend;
+@property (nonatomic, strong) Trend *trend;
+- (IBAction )sendMessage:(id)sender;
 
 @end
 
@@ -28,6 +32,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.selectedTrend = 0;
 	// Do any additional setup after loading the view.
     self.changeTopicButton.layer.borderColor = [UIColor blueColor].CGColor;
     self.changeTopicButton.layer.borderWidth = 1.0;
@@ -215,7 +220,45 @@
 }
 
 -(IBAction) getNewTopic {
-    
+    if (!self.category) {
+        NSString *urlString = [NSString stringWithFormat:@"http://localhost:3000/fetch/trends_by_user.json?user_id_1=%@&user_id_2=3", [[CBUser sharedManager] user_id]];
+        NSURL *aUrl = [NSURL URLWithString:urlString];
+        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:aUrl
+                                                               cachePolicy:NSURLRequestUseProtocolCachePolicy
+                                                           timeoutInterval:60.0];
+        NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+        [request setValue:@"application/json" forHTTPHeaderField:@"Content-type"];
+        [request setHTTPMethod:@"GET"];
+        
+        [NSURLConnection sendAsynchronousRequest:request queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
+         {
+             NSString *responseBody = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+             NSDictionary *dict = [NSJSONSerialization JSONObjectWithData: [responseBody dataUsingEncoding:NSUTF8StringEncoding]
+                                                                  options: NSJSONReadingMutableContainers
+                                                                    error: &error];
+             self.category = [[CBCategory alloc] initWithDict:dict];
+             dispatch_async(dispatch_get_main_queue(), ^{
+                 self.trend = self.category.trends[self.selectedTrend];
+                 self.selectedTrend += 2;
+                 if (self.selectedTrend > self.category.trends.count - 1) {
+                     self.selectedTrend = 0;
+                 }
+                 self.messageTextField.text = [NSString stringWithFormat:@"topic: %@\nurl: %@\ndescription: %@", self.trend.name, self.trend.url, self.trend.summary];
+                 [self sendMessage:self.sendMessageButton];
+
+             });
+         }];
+        [queue waitUntilAllOperationsAreFinished];
+    }
+    if (self.selectedTrend > 0) {
+        if (self.selectedTrend > self.category.trends.count - 1) {
+            self.selectedTrend = 0;
+        }
+        self.trend = self.category.trends[self.selectedTrend];
+        self.messageTextField.text = [NSString stringWithFormat:@"topic: %@\nurl: %@\ndescription: %@", self.trend.name, self.trend.url, self.trend.summary];
+        [self sendMessage:self.sendMessageButton];
+        self.selectedTrend += 1;
+    }
 }
 
 #pragma mark

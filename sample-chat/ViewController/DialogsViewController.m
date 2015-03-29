@@ -8,7 +8,7 @@
 
 #import "DialogsViewController.h"
 #import "СhatViewController.h"
-
+#import "CBUser.h"
 @interface DialogsViewController () <UITableViewDelegate, UITableViewDataSource, QBActionStatusDelegate>
 
 @property (nonatomic, strong) NSMutableArray *dialogs;
@@ -25,6 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Chats";
+    [[CBUser sharedManager] setDialogView:self];
     // Do any additional setup after loading the view.
 }
 

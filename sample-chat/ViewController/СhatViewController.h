@@ -12,6 +12,5 @@
 @interface ChatViewController : UIViewController
 
 @property (nonatomic, strong) QBChatDialog *dialog;
-@property (nonatomic, strong) Trend *trend;
 
 @end

@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Trend.h"
 
 @interface UsersViewController : UIViewController
+@property (nonatomic, strong) Trend *trend;
 
 @end

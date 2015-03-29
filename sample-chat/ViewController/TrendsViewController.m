@@ -12,7 +12,7 @@
 #import "CBCategory.h"
 #import "Trend.h"
 #import "SplashViewController.h"
-#import "СhatViewController.h"
+#import "UsersViewController.h"
 
 @interface TrendsViewController ()
 @property (nonatomic, strong) GetTrendsResponse *results;
@@ -34,7 +34,7 @@
 }
 
 -(void) getTrends {
-    NSURL *aUrl = [NSURL URLWithString:@"http://api.myjson.com/bins/176rr"];
+    NSURL *aUrl = [NSURL URLWithString:@"http:/localhost:3000/trends.json"];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:aUrl
                                                            cachePolicy:NSURLRequestUseProtocolCachePolicy
                                                        timeoutInterval:60.0];
@@ -101,7 +101,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    [self performSegueWithIdentifier:@"ShowChatViewControllerSegue" sender:self];
+    [self performSegueWithIdentifier:@"show_trend" sender:self];
 }
 
 
@@ -111,8 +111,8 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    if ([segue.identifier  isEqual: @"ShowChatViewControllerSegue"]) {
-        ChatViewController *vc = (ChatViewController *)[segue destinationViewController];
+    if ([segue.identifier  isEqual: @"show_trend"]) {
+        UsersViewController *vc = (UsersViewController *)[segue destinationViewController];
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         CBCategory *category = self.results.categories[indexPath.section];
         vc.trend = category.trends[indexPath.row];

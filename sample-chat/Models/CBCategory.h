@@ -10,6 +10,7 @@
 
 @interface CBCategory : NSObject
 @property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *category_id;
 @property (nonatomic, strong) NSMutableArray *trends;
 
 -(id) initWithDict:(NSDictionary *) dict;

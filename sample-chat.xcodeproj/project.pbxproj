@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		77574711118E44F680DD7EC4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1956EB9D11485189AD3B71 /* libPods.a */; };
+		B743BBBE1AC7335B00A31BE8 /* icon_buzz.png in Resources */ = {isa = PBXBuildFile; fileRef = B743BBBB1AC7335B00A31BE8 /* icon_buzz.png */; };
+		B743BBBF1AC7335B00A31BE8 /* icon_buzz@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B743BBBC1AC7335B00A31BE8 /* icon_buzz@2x.png */; };
+		B743BBC01AC7335B00A31BE8 /* icon_buzz@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B743BBBD1AC7335B00A31BE8 /* icon_buzz@3x.png */; };
+		B743BBC51AC7375400A31BE8 /* CBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B743BBC41AC7375400A31BE8 /* CBUser.m */; };
+		B743BBC81AC73ABC00A31BE8 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B743BBC71AC73ABC00A31BE8 /* ProfileViewController.m */; };
+		B743BBCB1AC73AC400A31BE8 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B743BBCA1AC73AC400A31BE8 /* SignupViewController.m */; };
+		B743BBCF1AC73CDF00A31BE8 /* YoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743BBCE1AC73CDF00A31BE8 /* YoTextField.swift */; };
+		B743BBD41AC73D7300A31BE8 /* CBTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B743BBD31AC73D7300A31BE8 /* CBTextField.m */; };
+		B743BBD71AC740AD00A31BE8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B743BBD61AC740AD00A31BE8 /* MainViewController.m */; };
+		B743BBDA1AC78D6A00A31BE8 /* InterestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B743BBD91AC78D6A00A31BE8 /* InterestsViewController.m */; };
+		B743BBDD1AC796BD00A31BE8 /* GetInterestsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B743BBDC1AC796BD00A31BE8 /* GetInterestsResponse.m */; };
+		B743BBE01AC7A97F00A31BE8 /* ShowTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B743BBDF1AC7A97F00A31BE8 /* ShowTrendViewController.m */; };
+		B743BBE41AC7AFCE00A31BE8 /* Bitmap.png in Resources */ = {isa = PBXBuildFile; fileRef = B743BBE11AC7AFCE00A31BE8 /* Bitmap.png */; };
+		B743BBE51AC7AFCE00A31BE8 /* Bitmap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B743BBE21AC7AFCE00A31BE8 /* Bitmap@2x.png */; };
+		B743BBE61AC7AFCE00A31BE8 /* Bitmap@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B743BBE31AC7AFCE00A31BE8 /* Bitmap@3x.png */; };
 		B78B8CD71AC6ADBB009F64EA /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B78B8CCD1AC6ADBB009F64EA /* back@2x.png */; };
 		B78B8CD81AC6ADBB009F64EA /* chat_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B78B8CCE1AC6ADBB009F64EA /* chat_icon.png */; };
 		B78B8CD91AC6ADBB009F64EA /* chat_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B78B8CCF1AC6ADBB009F64EA /* chat_icon@2x.png */; };
@@ -80,6 +95,29 @@
 
 /* Begin PBXFileReference section */
 		9FFAEACF57C4405D906A4932 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		B743BBBB1AC7335B00A31BE8 /* icon_buzz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_buzz.png; sourceTree = "<group>"; };
+		B743BBBC1AC7335B00A31BE8 /* icon_buzz@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_buzz@2x.png"; sourceTree = "<group>"; };
+		B743BBBD1AC7335B00A31BE8 /* icon_buzz@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_buzz@3x.png"; sourceTree = "<group>"; };
+		B743BBC31AC7375400A31BE8 /* CBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBUser.h; sourceTree = "<group>"; };
+		B743BBC41AC7375400A31BE8 /* CBUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBUser.m; sourceTree = "<group>"; };
+		B743BBC61AC73ABC00A31BE8 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		B743BBC71AC73ABC00A31BE8 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		B743BBC91AC73AC400A31BE8 /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		B743BBCA1AC73AC400A31BE8 /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		B743BBCE1AC73CDF00A31BE8 /* YoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoTextField.swift; sourceTree = "<group>"; };
+		B743BBD21AC73D7300A31BE8 /* CBTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBTextField.h; sourceTree = "<group>"; };
+		B743BBD31AC73D7300A31BE8 /* CBTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBTextField.m; sourceTree = "<group>"; };
+		B743BBD51AC740AD00A31BE8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		B743BBD61AC740AD00A31BE8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		B743BBD81AC78D6A00A31BE8 /* InterestsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterestsViewController.h; sourceTree = "<group>"; };
+		B743BBD91AC78D6A00A31BE8 /* InterestsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterestsViewController.m; sourceTree = "<group>"; };
+		B743BBDB1AC796BD00A31BE8 /* GetInterestsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetInterestsResponse.h; sourceTree = "<group>"; };
+		B743BBDC1AC796BD00A31BE8 /* GetInterestsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetInterestsResponse.m; sourceTree = "<group>"; };
+		B743BBDE1AC7A97F00A31BE8 /* ShowTrendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowTrendViewController.h; sourceTree = "<group>"; };
+		B743BBDF1AC7A97F00A31BE8 /* ShowTrendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowTrendViewController.m; sourceTree = "<group>"; };
+		B743BBE11AC7AFCE00A31BE8 /* Bitmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bitmap.png; sourceTree = "<group>"; };
+		B743BBE21AC7AFCE00A31BE8 /* Bitmap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bitmap@2x.png"; sourceTree = "<group>"; };
+		B743BBE31AC7AFCE00A31BE8 /* Bitmap@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bitmap@3x.png"; sourceTree = "<group>"; };
 		B77D18851AC5E7920095E821 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		B78B8CCD1AC6ADBB009F64EA /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 		B78B8CCE1AC6ADBB009F64EA /* chat_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat_icon.png; sourceTree = "<group>"; };
@@ -198,6 +236,12 @@
 		B78B8CCC1AC6ADBB009F64EA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B743BBBB1AC7335B00A31BE8 /* icon_buzz.png */,
+				B743BBBC1AC7335B00A31BE8 /* icon_buzz@2x.png */,
+				B743BBE11AC7AFCE00A31BE8 /* Bitmap.png */,
+				B743BBE21AC7AFCE00A31BE8 /* Bitmap@2x.png */,
+				B743BBE31AC7AFCE00A31BE8 /* Bitmap@3x.png */,
+				B743BBBD1AC7335B00A31BE8 /* icon_buzz@3x.png */,
 				B78B8CF41AC6B991009F64EA /* trends.json */,
 				B78B8CCD1AC6ADBB009F64EA /* back@2x.png */,
 				B78B8CCE1AC6ADBB009F64EA /* chat_icon.png */,
@@ -305,6 +349,16 @@
 				B78B8CEE1AC6B200009F64EA /* SettingsViewController.m */,
 				B78B8CF01AC6B223009F64EA /* TrendsViewController.h */,
 				B78B8CF11AC6B223009F64EA /* TrendsViewController.m */,
+				B743BBC61AC73ABC00A31BE8 /* ProfileViewController.h */,
+				B743BBC71AC73ABC00A31BE8 /* ProfileViewController.m */,
+				B743BBC91AC73AC400A31BE8 /* SignupViewController.h */,
+				B743BBCA1AC73AC400A31BE8 /* SignupViewController.m */,
+				B743BBD51AC740AD00A31BE8 /* MainViewController.h */,
+				B743BBD61AC740AD00A31BE8 /* MainViewController.m */,
+				B743BBD81AC78D6A00A31BE8 /* InterestsViewController.h */,
+				B743BBD91AC78D6A00A31BE8 /* InterestsViewController.m */,
+				B743BBDE1AC7A97F00A31BE8 /* ShowTrendViewController.h */,
+				B743BBDF1AC7A97F00A31BE8 /* ShowTrendViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -337,6 +391,10 @@
 				B78B8CFF1AC6D109009F64EA /* CBCategory.m */,
 				B78B8D011AC6D464009F64EA /* GetTrendsResponse.h */,
 				B78B8D021AC6D464009F64EA /* GetTrendsResponse.m */,
+				B743BBC31AC7375400A31BE8 /* CBUser.h */,
+				B743BBC41AC7375400A31BE8 /* CBUser.m */,
+				B743BBDB1AC796BD00A31BE8 /* GetInterestsResponse.h */,
+				B743BBDC1AC796BD00A31BE8 /* GetInterestsResponse.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -357,10 +415,13 @@
 		BFE6FBF21812E0D300E64AC4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B743BBCE1AC73CDF00A31BE8 /* YoTextField.swift */,
 				BFE6FBF31812E0F800E64AC4 /* ChatMessageTableViewCell.h */,
 				B78B8CF81AC6BDD3009F64EA /* TrendTableViewCell.h */,
 				B78B8CF91AC6BDD3009F64EA /* TrendTableViewCell.m */,
 				BFE6FBF41812E0F800E64AC4 /* ChatMessageTableViewCell.m */,
+				B743BBD21AC73D7300A31BE8 /* CBTextField.h */,
+				B743BBD31AC73D7300A31BE8 /* CBTextField.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -450,17 +511,23 @@
 				B78B8CD81AC6ADBB009F64EA /* chat_icon.png in Resources */,
 				B78B8CD91AC6ADBB009F64EA /* chat_icon@2x.png in Resources */,
 				BFBD3C941832CF30009D090B /* sound.mp3 in Resources */,
+				B743BBE51AC7AFCE00A31BE8 /* Bitmap@2x.png in Resources */,
+				B743BBBE1AC7335B00A31BE8 /* icon_buzz.png in Resources */,
 				BFE6FB91180E8EF100E64AC4 /* Images.xcassets in Resources */,
+				B743BBC01AC7335B00A31BE8 /* icon_buzz@3x.png in Resources */,
 				B78B8CD71AC6ADBB009F64EA /* back@2x.png in Resources */,
 				B78B8CDC1AC6ADBB009F64EA /* General@2x.png in Resources */,
 				B78B8CE01AC6ADBB009F64EA /* path@3x.png in Resources */,
+				B743BBE61AC7AFCE00A31BE8 /* Bitmap@3x.png in Resources */,
 				B78B8CDD1AC6ADBB009F64EA /* General@3x.png in Resources */,
 				BFE6FB80180E8EF100E64AC4 /* InfoPlist.strings in Resources */,
+				B743BBBF1AC7335B00A31BE8 /* icon_buzz@2x.png in Resources */,
 				B78B8CDE1AC6ADBB009F64EA /* path.png in Resources */,
 				B78B8CDA1AC6ADBB009F64EA /* chat_icon@3x.png in Resources */,
 				B78B8CDF1AC6ADBB009F64EA /* path@2x.png in Resources */,
 				BFE6FB89180E8EF100E64AC4 /* Main.storyboard in Resources */,
 				B78B8CDB1AC6ADBB009F64EA /* General.png in Resources */,
+				B743BBE41AC7AFCE00A31BE8 /* Bitmap.png in Resources */,
 				B78B8CF51AC6B991009F64EA /* trends.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +576,10 @@
 				B78B8D001AC6D109009F64EA /* CBCategory.m in Sources */,
 				BFB4627C18150EB00010AE49 /* ChatService.m in Sources */,
 				B78B8D061AC6DB34009F64EA /* СhatViewController.m in Sources */,
+				B743BBCF1AC73CDF00A31BE8 /* YoTextField.swift in Sources */,
+				B743BBE01AC7A97F00A31BE8 /* ShowTrendViewController.m in Sources */,
+				B743BBCB1AC73AC400A31BE8 /* SignupViewController.m in Sources */,
+				B743BBC81AC73ABC00A31BE8 /* ProfileViewController.m in Sources */,
 				B78B8CFD1AC6CFF1009F64EA /* Trend.m in Sources */,
 				B78B8CEC1AC6B1C0009F64EA /* TabBarController.m in Sources */,
 				B78B8D031AC6D464009F64EA /* GetTrendsResponse.m in Sources */,
@@ -516,14 +587,19 @@
 				BFE6FBE1180EE57700E64AC4 /* UsersPaginator.m in Sources */,
 				BFE6FBDC180EE50200E64AC4 /* NMPaginator.m in Sources */,
 				B78B8CF21AC6B223009F64EA /* TrendsViewController.m in Sources */,
+				B743BBD71AC740AD00A31BE8 /* MainViewController.m in Sources */,
 				BFE6FBCF180EA2F300E64AC4 /* UsersViewController.m in Sources */,
 				BFBD3C991833D654009D090B /* CharactersEscapeService.m in Sources */,
 				BFE6FB82180E8EF100E64AC4 /* main.m in Sources */,
+				B743BBDD1AC796BD00A31BE8 /* GetInterestsResponse.m in Sources */,
+				B743BBDA1AC78D6A00A31BE8 /* InterestsViewController.m in Sources */,
 				BFE6FBF51812E0F800E64AC4 /* ChatMessageTableViewCell.m in Sources */,
 				BFE6FBCE180EA2F300E64AC4 /* DialogsViewController.m in Sources */,
 				BFE6FBE5180F295100E64AC4 /* LocalStorageService.m in Sources */,
 				B78B8CEF1AC6B200009F64EA /* SettingsViewController.m in Sources */,
 				B78B8CFA1AC6BDD3009F64EA /* TrendTableViewCell.m in Sources */,
+				B743BBD41AC73D7300A31BE8 /* CBTextField.m in Sources */,
+				B743BBC51AC7375400A31BE8 /* CBUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
